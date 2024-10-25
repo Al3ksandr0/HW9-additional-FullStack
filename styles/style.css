@@ -1,0 +1,305 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+    font-weight: 500;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background:
+        url("../images/designer.png") no-repeat,
+        url("../images/background-designer.png") no-repeat;
+    background-position:
+        top 200px right -270px,
+        top -100px right -100px;
+}
+
+.container {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+/************* header *************/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    gap: 5rem;
+}
+
+header nav ul li a {
+    color: #505f98;
+    text-decoration: none;
+}
+
+.header-button {
+    padding: 0.5rem 4rem;
+    border-radius: 2px;
+    text-decoration: none;
+    color: white;
+    background-color: #111b47;
+}
+.header-button:hover {
+    background-color: #172460;
+}
+/************* intro-section *************/
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.intro-text {
+    max-width: 35rem;
+}
+
+.intro-text h1 {
+    font-size: 3.125rem;
+    color: #111b47;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.intro-text p {
+    font-size: 1.125rem;
+    color: #505f98;
+    line-height: 1.8;
+    padding-bottom: 0.5rem;
+}
+
+.buttons {
+    margin-top: 4rem;
+}
+
+.button-primary,
+.button-secondary {
+    padding: 0.6rem 3.2rem;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 2rem;
+}
+
+.button-primary {
+    background-color: #111b47;
+    color: white;
+}
+
+.button-primary:hover {
+    background-color: #172460;
+}
+
+.button-secondary {
+    color: #091133;
+    border: 3px solid #091133;
+}
+
+.button-secondary:hover {
+    background-color: #dcdcdc;
+}
+/************* product-intro *************/
+
+.product-intro {
+    display: flex;
+    margin-bottom: 10rem;
+}
+
+.product-intro__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.product-intro__content:not(:first-of-type) {
+    margin-left: 15rem;
+}
+
+.product-intro__content h1 {
+    font-size: 2.25rem;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.product-intro__content p {
+    margin-bottom: 21px;
+    color: #6f7cb2;
+    line-height: 1.8;
+}
+
+.product-intro__content-features {
+    display: flex;
+    margin-top: 3rem;
+    gap: 25px;
+}
+
+.product-intro__content-feature img {
+    margin-bottom: 1rem;
+}
+.product-intro__content-feature h2 {
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+.product-intro__content-feature p {
+    font-size: 0.75rem;
+}
+
+.product-intro__image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.product-intro__image img {
+    max-width: 100%;
+}
+
+.product-intro__content-button {
+    margin-top: 1.5rem;
+}
+.product-intro__content-button a {
+    padding: 0.6rem 3.2rem;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 2rem;
+    background-color: #111b47;
+    color: white;
+}
+
+.product-intro__content-button a:hover {
+    background-color: #172460;
+}
+
+/************* outro-section *************/
+
+.outro-section {
+    background: url("../images/Rectangle.png") no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 50rem;
+}
+
+.outro-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 6rem;
+    max-width: 35rem;
+}
+
+.outro-content h2 {
+    padding-top: 10rem;
+}
+.outro-content__description {
+    margin-bottom: 3rem;
+}
+.outro-content__description h2 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.outro-content__description p {
+    color: #6f7cb2;
+}
+
+.outro-content__price {
+    margin-bottom: 5rem;
+}
+.outro-content__price h1 {
+    font-size: 3.125rem;
+    color: #222f65;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.outro-content__price p {
+    color: #37447e;
+}
+
+.outro-content__button p {
+    color: #5d6970;
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.outro-content__button a {
+    padding: 0.6rem 3.2rem;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #111b47;
+    color: white;
+}
+
+.outro-content__button a:hover {
+    background-color: #172460;
+}
+/************* footer *************/
+
+footer {
+    background-color: #e7ecff;
+}
+
+.footer-wrapper {
+    padding: 20px 0;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.footer-left p {
+    color: #939ea4;
+    font-size: 0.875rem;
+}
+
+.footer-right__button {
+    padding: 0.3rem 1.35rem;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.75rem;
+    background-color: #111b47;
+    color: white;
+}
+
+.footer-bottom {
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e1e1e1;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 5rem;
+    font-weight: 500;
+}
+.social-icons {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-menu li a {
+    color: #929ecc;
+    text-decoration: none;
+}
